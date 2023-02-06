@@ -65,21 +65,3 @@ Step 9: Start your nodejs application locally inside the app directory.
 Step 10: Access you nodejs application UI from browser
 
     http://localhost:3000
-
-Step 11:To build a docker image from the application
-
-    docker build -t users-app:1.0 .
-
-Step 12: To re-tag the created image
-
-    docker tag users-app:1.0 jason8746/users-app:1.0
-
-Step 13: Push an image to public repository Docker hub
-
-    docker push jason8746/users-app:1.0
-
-![Alt text](app/images/users-app-image_docker.png?raw=true)
-
-Step 14: Pull the created users-app image from Docker hub
-
-    docker pull jason8746/users-app:1.0
