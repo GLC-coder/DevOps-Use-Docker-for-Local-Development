@@ -35,13 +35,12 @@ let mongoUrlDockerCompose = `mongodb://${process.env.USER_NAME}:${process.env.PA
 let mongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 
 // "user-account" in demo with docker. "my-db" in demo with docker-compose
-let databaseName = "my-db";
 
 app.post("/update-profile", function (req, res) {
   let userObj = req.body;
 
   MongoClient.connect(
-    mongoUrlLocal,
+    mongoUrlDocker,
     mongoClientOptions,
     function (err, client) {
       if (err) throw err;
@@ -71,7 +70,7 @@ app.get("/get-profile", function (req, res) {
   let response = {};
   // Connect to the db
   MongoClient.connect(
-    mongoUrlLocal,
+    mongoUrlDocker,
     mongoClientOptions,
     function (err, client) {
       if (err) throw err;

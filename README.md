@@ -54,6 +54,9 @@ Step 7: Go to `app` directory of project
 Step 8: Add a " .env" file into the app directory of project and fill the environment variable
 ![Alt text](app/images/envfile.png?raw=true)
 
+Assign "user-account" to DATABASE in .env file
+Assign "users" to COLLECTION in .env file
+
 Step 9: Start your nodejs application locally inside the app directory.
 
     npm install
