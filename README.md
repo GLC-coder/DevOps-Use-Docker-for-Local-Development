@@ -15,7 +15,9 @@ Docker, Node.js MongoDB, MongoExpress,HTML, CSS, JavaScript
 ### Project Description:
 
 1- Create Dockerfile for Nodejs application and build Docker image.
+
 2- Run Nodejs application in Docker container and connect to MongoDB database container locally.
+
 3- Run MongoExpress container as a UI of the MongoDB database.
 
 ### With Docker
